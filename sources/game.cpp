@@ -10,11 +10,9 @@ void play() {
   int valueToGuess{rand() % 100 + 1};
 
   while(!gameOver && attemptsCount > 0) {
-    cout << "Il vous reste " << attemptsCount << " tentatives" << endl;
-    cout << valueToGuess << endl;
-    cout << playerGuess << endl;
-    cout << "Veuillez saisir un nombre entre 1 et 100" << endl;
+    cout << "Il vous reste " << attemptsCount << " tentatives" << endl << "Veuillez saisir un nombre entre 1 et 100" << endl;
     cin >> playerGuess;
+
     if (playerGuess == valueToGuess) {
       gameOver = true;
       playerWon = true;

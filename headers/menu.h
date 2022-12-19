@@ -6,6 +6,7 @@ enum class MenuOption {
   QUIT = 'q',
   INCORRECT
 };
+
 MenuOption gameMenu(); 
 
 #endif
